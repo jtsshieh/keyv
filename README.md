@@ -1,13 +1,13 @@
 <h1 align="center">
-	<img width="250" src="https://rawgit.com/lukechilds/keyv/master/media/logo.svg" alt="keyv">
+	<img width="250" src="media/logo.svg" alt="keyv">
 	<br>
 	<br>
 </h1>
 
 > Simple key-value storage with support for multiple backends
 
-[![Build Status](https://travis-ci.org/lukechilds/keyv.svg?branch=master)](https://travis-ci.org/lukechilds/keyv)
-[![Coverage Status](https://coveralls.io/repos/github/lukechilds/keyv/badge.svg?branch=master)](https://coveralls.io/github/lukechilds/keyv?branch=master)
+[![Build Status](https://travis-ci.org/keyvjs/keyv.svg?branch=master)](https://travis-ci.org/keyvjs/keyv)
+[![Coverage Status](https://coveralls.io/repos/github/keyvjs/keyv/badge.svg?branch=master)](https://coveralls.io/github/keyvjs/keyv?branch=master)
 [![npm](https://img.shields.io/npm/dm/keyv.svg)](https://www.npmjs.com/package/keyv)
 [![npm](https://img.shields.io/npm/v/keyv.svg)](https://www.npmjs.com/package/keyv)
 
@@ -100,15 +100,15 @@ const keyv = new Keyv({ serialize: JSON.stringify, deserialize: JSON.parse });
 
 ## Official Storage Adapters
 
-The official storage adapters are covered by [over 150 integration tests](https://travis-ci.org/lukechilds/keyv/jobs/260418145) to guarantee consistent behaviour. They are lightweight, efficient wrappers over the DB clients making use of indexes and native TTLs where available.
+The official storage adapters are covered by [over 150 integration tests](https://travis-ci.org/keyvjs/keyv/jobs/260418145) to guarantee consistent behaviour. They are lightweight, efficient wrappers over the DB clients making use of indexes and native TTLs where available.
 
 Database | Adapter | Native TTL | Status
 ---|---|---|---
-Redis | [@keyv/redis](https://github.com/lukechilds/keyv-redis) | Yes | [![Build Status](https://travis-ci.org/lukechilds/keyv-redis.svg?branch=master)](https://travis-ci.org/lukechilds/keyv-redis) [![Coverage Status](https://coveralls.io/repos/github/lukechilds/keyv-redis/badge.svg?branch=master)](https://coveralls.io/github/lukechilds/keyv-redis?branch=master)
-MongoDB | [@keyv/mongo](https://github.com/lukechilds/keyv-mongo) | Yes | [![Build Status](https://travis-ci.org/lukechilds/keyv-mongo.svg?branch=master)](https://travis-ci.org/lukechilds/keyv-mongo) [![Coverage Status](https://coveralls.io/repos/github/lukechilds/keyv-mongo/badge.svg?branch=master)](https://coveralls.io/github/lukechilds/keyv-mongo?branch=master)
-SQLite | [@keyv/sqlite](https://github.com/lukechilds/keyv-sqlite) | No | [![Build Status](https://travis-ci.org/lukechilds/keyv-sqlite.svg?branch=master)](https://travis-ci.org/lukechilds/keyv-sqlite) [![Coverage Status](https://coveralls.io/repos/github/lukechilds/keyv-sqlite/badge.svg?branch=master)](https://coveralls.io/github/lukechilds/keyv-sqlite?branch=master)
-PostgreSQL | [@keyv/postgres](https://github.com/lukechilds/keyv-postgres) | No | [![Build Status](https://travis-ci.org/lukechilds/keyv-postgres.svg?branch=master)](https://travis-ci.org/lukechildskeyv-postgreskeyv) [![Coverage Status](https://coveralls.io/repos/github/lukechilds/keyv-postgres/badge.svg?branch=master)](https://coveralls.io/github/lukechilds/keyv-postgres?branch=master)
-MySQL | [@keyv/mysql](https://github.com/lukechilds/keyv-mysql) | No | [![Build Status](https://travis-ci.org/lukechilds/keyv-mysql.svg?branch=master)](https://travis-ci.org/lukechilds/keyv-mysql) [![Coverage Status](https://coveralls.io/repos/github/lukechilds/keyv-mysql/badge.svg?branch=master)](https://coveralls.io/github/lukechilds/keyv-mysql?branch=master)
+Redis | [@keyv/redis](https://github.com/keyvjs/keyv-redis) | Yes | [![Build Status](https://travis-ci.org/keyvjs/keyv-redis.svg?branch=master)](https://travis-ci.org/keyvjs/keyv-redis) [![Coverage Status](https://coveralls.io/repos/github/keyvjs/keyv-redis/badge.svg?branch=master)](https://coveralls.io/github/keyvjs/keyv-redis?branch=master)
+MongoDB | [@keyv/mongo](https://github.com/keyvjs/keyv-mongo) | Yes | [![Build Status](https://travis-ci.org/keyvjs/keyv-mongo.svg?branch=master)](https://travis-ci.org/keyvjs/keyv-mongo) [![Coverage Status](https://coveralls.io/repos/github/keyvjs/keyv-mongo/badge.svg?branch=master)](https://coveralls.io/github/keyvjs/keyv-mongo?branch=master)
+SQLite | [@keyv/sqlite](https://github.com/keyvjs/keyv-sqlite) | No | [![Build Status](https://travis-ci.org/keyvjs/keyv-sqlite.svg?branch=master)](https://travis-ci.org/keyvjs/keyv-sqlite) [![Coverage Status](https://coveralls.io/repos/github/keyvjs/keyv-sqlite/badge.svg?branch=master)](https://coveralls.io/github/keyvjs/keyv-sqlite?branch=master)
+PostgreSQL | [@keyv/postgres](https://github.com/keyvjs/keyv-postgres) | No | [![Build Status](https://travis-ci.org/keyvjs/keyv-postgres.svg?branch=master)](https://travis-ci.org/lukechildskeyv-postgreskeyv) [![Coverage Status](https://coveralls.io/repos/github/keyvjs/keyv-postgres/badge.svg?branch=master)](https://coveralls.io/github/keyvjs/keyv-postgres?branch=master)
+MySQL | [@keyv/mysql](https://github.com/keyvjs/keyv-mysql) | No | [![Build Status](https://travis-ci.org/keyvjs/keyv-mysql.svg?branch=master)](https://travis-ci.org/keyvjs/keyv-mysql) [![Coverage Status](https://coveralls.io/repos/github/keyvjs/keyv-mysql/badge.svg?branch=master)](https://coveralls.io/github/keyvjs/keyv-mysql?branch=master)
 
 ## Third-party Storage Adapters
 
