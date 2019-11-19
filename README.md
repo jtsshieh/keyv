@@ -33,7 +33,7 @@ There are a few existing modules similar to Keyv, however Keyv is different beca
 Install Keyv.
 
 ```
-npm install --save keyv
+npm install --save @keyvjs/keyv
 ```
 
 By default everything is stored in memory, you can optionally also install a storage adapter.
