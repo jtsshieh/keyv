@@ -5,7 +5,7 @@ const JSONB = require('json-buffer');
 
 const loadStore = opts => {
 	const adapters = {
-		redis: '@keyv/redis',
+		redis: '@keyvjs/redis',
 		mongodb: '@keyv/mongo',
 		mongo: '@keyv/mongo',
 		sqlite: '@keyv/sqlite',

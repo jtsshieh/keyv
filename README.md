@@ -39,7 +39,7 @@ npm install --save @keyvjs/keyv
 By default everything is stored in memory, you can optionally also install a storage adapter.
 
 ```
-npm install --save @keyv/redis
+npm install --save @keyvjs/redis
 npm install --save @keyv/mongo
 npm install --save @keyv/sqlite
 npm install --save @keyv/postgres
@@ -104,7 +104,7 @@ The official storage adapters are covered by [over 150 integration tests](https:
 
 Database | Adapter | Native TTL | Status
 ---|---|---|---
-Redis | [@keyv/redis](https://github.com/keyvjs/keyv-redis) | Yes | [![Build Status](https://travis-ci.org/keyvjs/keyv-redis.svg?branch=master)](https://travis-ci.org/keyvjs/keyv-redis) [![Coverage Status](https://coveralls.io/repos/github/keyvjs/keyv-redis/badge.svg?branch=master)](https://coveralls.io/github/keyvjs/keyv-redis?branch=master)
+Redis | [@keyvjs/redis](https://github.com/keyvjs/redis) | Yes | [![Build Status](https://travis-ci.com/keyvjs/keyv-redis.svg?branch=master)](https://travis-ci.com/keyvjs/keyv-redis) [![Coverage Status](https://coveralls.io/repos/github/keyvjs/redis/badge.svg?branch=master)](https://coveralls.io/github/keyvjs/redis?branch=master)
 MongoDB | [@keyv/mongo](https://github.com/keyvjs/keyv-mongo) | Yes | [![Build Status](https://travis-ci.org/keyvjs/keyv-mongo.svg?branch=master)](https://travis-ci.org/keyvjs/keyv-mongo) [![Coverage Status](https://coveralls.io/repos/github/keyvjs/keyv-mongo/badge.svg?branch=master)](https://coveralls.io/github/keyvjs/keyv-mongo?branch=master)
 SQLite | [@keyv/sqlite](https://github.com/keyvjs/keyv-sqlite) | No | [![Build Status](https://travis-ci.org/keyvjs/keyv-sqlite.svg?branch=master)](https://travis-ci.org/keyvjs/keyv-sqlite) [![Coverage Status](https://coveralls.io/repos/github/keyvjs/keyv-sqlite/badge.svg?branch=master)](https://coveralls.io/github/keyvjs/keyv-sqlite?branch=master)
 PostgreSQL | [@keyv/postgres](https://github.com/keyvjs/keyv-postgres) | No | [![Build Status](https://travis-ci.org/keyvjs/keyv-postgres.svg?branch=master)](https://travis-ci.org/lukechildskeyv-postgreskeyv) [![Coverage Status](https://coveralls.io/repos/github/keyvjs/keyv-postgres/badge.svg?branch=master)](https://coveralls.io/github/keyvjs/keyv-postgres?branch=master)
@@ -174,7 +174,7 @@ const AwesomeModule = require('awesome-module');
 // Caches stuff in memory by default
 const awesomeModule = new AwesomeModule();
 
-// After npm install --save keyv-redis
+// After npm install --save @keyvjs/redis
 const awesomeModule = new AwesomeModule({ cache: 'redis://localhost' });
 
 // Some third-party module that implements the Map API

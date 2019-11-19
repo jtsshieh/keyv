@@ -38,7 +38,7 @@
     "@keyv/mongo": "*",
     "@keyv/mysql": "*",
     "@keyv/postgres": "*",
-    "@keyv/redis": "*",
+    "@keyvjs/redis": "*",
     "@keyv/sqlite": "*",
     "@keyv/test-suite": "*",
     "nyc": "^14.1.1",
