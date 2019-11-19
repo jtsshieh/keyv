@@ -49,7 +49,7 @@ npm install --save @keyv/mysql
 Create a new Keyv instance, passing your connection string if applicable. Keyv will automatically load the correct storage adapter.
 
 ```js
-const Keyv = require('keyv');
+const Keyv = require('@keyvjs/keyv');
 
 // One of the following
 const keyv = new Keyv();
@@ -115,7 +115,7 @@ MySQL | [@keyv/mysql](https://github.com/keyvjs/keyv-mysql) | No | [![Build Stat
 You can also use third-party storage adapters or build your own. Keyv will wrap these storage adapters in TTL functionality and handle complex types internally.
 
 ```js
-const Keyv = require('keyv');
+const Keyv = require('@keyvjs/keyv');
 const myAdapter = require('./my-storage-adapter');
 
 const keyv = new Keyv({ store: myAdapter });
@@ -130,7 +130,7 @@ new Keyv({ store: new Map() });
 For example, [`quick-lru`](https://github.com/sindresorhus/quick-lru) is a completely unrelated module that implements the Map API.
 
 ```js
-const Keyv = require('keyv');
+const Keyv = require('@keyvjs/keyv');
 const QuickLRU = require('quick-lru');
 
 const lru = new QuickLRU({ maxSize: 1000 });
