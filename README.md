@@ -6,7 +6,7 @@
 
 > Simple key-value storage with support for multiple backends
 
-[![Build Status](https://travis-ci.org/keyvjs/keyv.svg?branch=master)](https://travis-ci.org/keyvjs/keyv)
+[![Build Status](https://travis-ci.com/keyvjs/keyv.svg?branch=master)](https://travis-ci.com/keyvjs/keyv)
 [![Coverage Status](https://coveralls.io/repos/github/keyvjs/keyv/badge.svg?branch=master)](https://coveralls.io/github/keyvjs/keyv?branch=master)
 [![npm](https://img.shields.io/npm/dm/keyv.svg)](https://www.npmjs.com/package/keyv)
 [![npm](https://img.shields.io/npm/v/keyv.svg)](https://www.npmjs.com/package/keyv)
