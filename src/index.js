@@ -56,9 +56,12 @@ class Keyv extends EventEmitter {
 		return Promise.resolve()
 			.then(() => store.getAll())
 			.then(async data => {
-				const result = {};
+				const result = [];
 				data.map((item) => {
-					result[item.key.slice(this.opts.namespace.length + 1, item.key.length)] = ((typeof item.value === 'string') ? (this.opts.deserialize(item.value)).value : item.value);
+					result.push({
+						key: item.key.slice(this.opts.namespace.length + 1, item.key.length),
+						value: ((typeof item.value === 'string') ? (this.opts.deserialize(item.value)).value : item.value)
+					})
 				})
 				return result;
 			})
