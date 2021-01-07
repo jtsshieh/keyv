@@ -49,6 +49,20 @@ class Keyv extends EventEmitter {
 	_getKeyPrefix(key) {
 		return `${this.opts.namespace}:${key}`;
 	}
+	
+	
+	getAll() {
+		const { store } = this.opts;
+		return Promise.resolve()
+			.then(() => store.getAll())
+			.then(async data => {
+				const result = {};
+				data.map((item) => {
+					result[item.key.slice(this.opts.namespace.length + 1, item.key.length)] = ((typeof item.value === 'string') ? (this.opts.deserialize(item.value)).value : item.value);
+				})
+				return result;
+			})
+	}
 
 	get(key, opts) {
 		const keyPrefixed = this._getKeyPrefix(key);
